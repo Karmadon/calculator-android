@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="pro.megakit.calculator.module.calculator.CalculatorFragment">
+
+    <pro.megakit.calculator.view.CalculatorDisplay
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:theme="@style/Calculator"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/display"
+        android:background="?android:attr/dividerHorizontal"/>
+
+    <pro.megakit.calculator.view.CalculatorKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/display"
+        app:columnCount="5">
+
+        <!-- 1-й ряд -->
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="cos"
+            app:value="cos"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="sin"
+            app:value="sin"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="sqrt"
+            app:value="√"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="e"
+            app:value="e"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="pi"
+            app:value="π"/>
+
+        <!-- 2-й ряд -->
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="7"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="8"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="9"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="divide"
+            app:value="/"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="clear"
+            app:value="C"/>
+
+        <!-- 3-й ряд -->
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="4"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="5"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="6"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="multiply"
+            app:value="*"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="clear_all"
+            app:value="AC"/>
+
+        <!-- 4-й ряд -->
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="1"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="2"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="3"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="minus"
+            app:value="-"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="percent"
+            app:value="%"/>
+
+        <!-- 5-й ряд -->
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="."/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="0"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="input"
+            app:value="00"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="plus"
+            app:value="+"/>
+
+        <pro.megakit.calculator.view.CalculatorKeyboardButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:operation="calc"
+            app:value="="/>
+
+    </pro.megakit.calculator.view.CalculatorKeyboard>
+
+</RelativeLayout>
